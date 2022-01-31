@@ -1,7 +1,18 @@
 #first{
     Border: 10px;
     color: yellow;
-    background-color: black;
+    background-color: gray;
+    text-align: left;
     
     
+}
+h1{
+ 
+ color: darkcyan;
+Border: 30px;
+  text-align: center;
+  padding: 10px;
+  
+  
+  
 }
