@@ -1,18 +1,17 @@
-#first{
+h1{
     Border: 10px;
     color: yellow;
     background-color: gray;
-    text-align: left;
+    text-align: center;
     
     
 }
-h1{
- 
- color: darkcyan;
-Border: 30px;
-  text-align: center;
-  padding: 10px;
-  
-  
+.rytham{
+  text-align: left;
+  color: gold;
+  #42445A
+  border: 10px solid;
+  border-color: black;
+  background-color: black;
   
 }
