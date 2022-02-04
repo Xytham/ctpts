@@ -1,75 +1,30 @@
-<!doctype html>
 <html>
-  <head>
-    <!-- Place your kit's code here -->
-    <script src="https://kit.fontawesome.com/d88631a317.js" crossorigin="anonymous"></script>
-    <title>Log in to CTTPS</title>
-  <style>
-  *{
-    margin: 0;
-    padding: 0;
-    
-    
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+  login(){  
+if (typeof(Storage) !== "undefined") {
+  localStorage.setItem("userId",this.state.user._id);
+  localStorage.setItem("username", this.state.user.username);
+  localStorage.setItem("email", this.state.user.email);
+  localStorage.setItem("date", this.state.user.date); 
+  this.setState({isLoggedIn: true}); 
+  localStorage.setItem("isLoggedIn", this.state.isLoggedIn);
+  if(localStorage.getItem("isLoggedIn")){
+    console.log("Congratulations "+localStorage.getItem("username")+", you are now logged in."); 
+    setTimeout(function () { 
+      window.location.pathname="/user";
+    }.bind(this),500);
   }
- body{
-   
-   text-align: center;
-   background: url(Images/basyal.jpg) no-repeat center center fixed; background-size: cover;
-   color: goldenrod;
-   position: absolute;
-   top: 41%;
-   left: 22%;
-    
- border: 10px solid green;
- 
-   
- }
- .h1{
-   font-size: 44px;
-   margin-bottom: 15px;
-   border: 11px solid purple;
- }
- .nose{
-   font-size: 44px;
-   
-   
-   
- }
- .btn{
-   font-size: 20px;
-   
-   
-   
- }
- </style>
-  </head>
-
-  <body>
-    <form class="ankit">
-      <h1>Log in to CTTPS</h1>
-   <i class="fas fa-user-plus"></i>
-  <div class="nose">
-  
-  <input type="email" name="email" placeholder="Enter your email">
-  </div>
-  <div class="nose">
-  <input type="password" name="password" placeholder="Enter your password">
-   </div> 
-      
-<div>
-
-  <br>
-  <a href="xyx.html">
-   Submit
-    
-  </a>
-  
-</div>  
-   
-
-  
-
-
- 
-  </body>
+} 
+else {
+  console.log("No support for local storage");
+}}
+  </script>
+</body>
 </html>
