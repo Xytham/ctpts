@@ -1,18 +1,7 @@
-#basyal{
-  Color: GOLD;
- text-align: center;
- font-size: 40px;
- background-color: black;
-  margin: 0px;
-  padding: 0px;
-  
-  
-}
-.rytham{
-  text-align: center;
-  
-  
-  
-  
-  
+body{
+  background: url(images/zzz.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
